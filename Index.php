@@ -3,7 +3,7 @@ spl_autoload_register(function ($class_name) {
     include $class_name . '.php';
 });
 
-$myStudents = new Students('Oussama','Lghachi', 1997, 1997, ["PHP", "JavaScript", "Math"] , 5);
+$myStudents = new Student('Oussama','Lghachi', 1997, 1997, ["PHP", "JavaScript", "Math"] , 5);
 echo '<h2>Student</h2>';
 echo 'My first name is '.' '.$myStudents->getFName();
 echo '<br>';
@@ -19,7 +19,7 @@ echo '<br>';
 echo 'My credit points is '.' '.$myStudents->getPoints();
 echo '<br>';
 
-$myTeachers = new Teachers('Kari','Laitinen', 1956, 1956, ["JavaScript" , "C++", "Python"], 'Kotkantie 1, 90250 Oulu, FINLAND');
+$myTeachers = new Teacher('Kari','Laitinen', 1956, 1956, ["JavaScript" , "C++", "Python"], 'Kotkantie 1, 90250 Oulu, FINLAND');
 echo '<h2>Teacher</h2>';
 echo 'My teacher is'. ' '.$myTeachers->getFName();
 echo '<br>';
